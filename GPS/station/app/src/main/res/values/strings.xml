@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">station</string>
+    <string name="hello_world">Why?</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello World!</string>
+    <string name="no_stations">Currently there are no items maintained</string>
+    <string name="menu_insert">Add Item</string>
+    <string name="menu_delete">Delete</string>
+    <string name="name">Name</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_lan">Latitude</string>
+    <string name="edit_lon">Longitude</string>
+
+    <color name="listcolor">#FFE87C</color>
+    <color name="black">#000000</color>
+
+    <string name="title_activity_stations_storing">StationsStoring</string>
+
+</resources>

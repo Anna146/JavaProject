@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView android:layout_height="wrap_content" android:text="My Location is:"
+            android:layout_width="match_parent" android:textSize="16px"
+            android:textStyle="bold" android:gravity="center_horizontal"
+            android:layout_marginTop="10dip" android:layout_marginBottom="10dip" />
+        <EditText android:layout_height="wrap_content" android:text=""
+            android:layout_width="match_parent" android:id="@+id/editTextShowLocation"
+            android:lines="6" android:gravity="top"/>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:id="@+id/buttonGetLocation"
+            android:text="Get My Location" android:textSize="15px"
+            android:textStyle="bold" android:layout_marginTop="10dip" />
+    </LinearLayout>
+</RelativeLayout>

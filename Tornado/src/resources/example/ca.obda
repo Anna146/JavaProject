@@ -1,0 +1,57 @@
+[PrefixDeclaration]
+:		file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[SourceDeclaration]
+sourceUri	datasource1
+connectionUrl	jdbc:mysql://localhost/storm_data_3?sessionVariables=sql_mode='ANSI'
+username	root
+password	sexsex1
+driverClass	com.mysql.jdbc.Driver
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-35840071753e4e3380ea8041bca97395
+target		:event/{EVENT_ID} a :Event ; :Even_ID {EVENT_ID} ; :Episode_ID {EPISODE_ID} ; :State_FIPS {STATE_FIPS} ; :Event_type {Event_Type_ID} ; :County_FIPS {details.County_ID} ; :Begin_Date_Time {Begin_Date_Time} ; :End_Date_Time {End_Date_Time} ; :Time_Zone {Time_Zone} ; :Injuries_Direct {Injuries_Direct} ; :Injuries_Indirect {Injuries_Indirect} ; :Deaths_direct {Deaths_Direct} ; :Deaths_Indirect {Deaths_Indirect} ; :Damage_Property {Damage_Property} ; :Damage_Crops {Damage_Crops} ; :Source_ID {Source_ID} ; :Begin_Lat {Begin_Lat} ; :Begin_Lon {Begin_Lon} ; :End_Lat {End_Lat} ; :End_Lon {End_Lon} ; :Tornado_Scale {Tornado_Scale_ID} ; :Episode_Narrative {Episode_Narative} ; :Event_Narrative {Event_Narative} . 
+source		select *  from details
+
+mappingId	MAPID-06becf178c3544e1939e0f781a1d1658
+target		:location/{LOCATION_ID} a :Location ; :Azimuth {AZIMUTH} ; :Longitude {LONGITUDE} ; :Latitude {LATITUDE} ; :Location_Type {LOCATION} ; :Range {RANGE} . 
+source		SELECT LOCATION_ID, AZIMUTH, LONGITUDE, LATITUDE, LOCATION, RANGE FROM locations
+
+mappingId	MAPID-005b865797654f049b3225a664f18703
+target		:state/{STATE_ID} a :State ; :State_ID {STATE_ID} ; :State_FIPS {FIPS} ; :State_name {STATE_NAME} ; :Official_State_Code {OFFICIAL_CODE} . 
+source		SELECT STATE_ID, STATE_NAME, FIPS, OFFICIAL_CODE from states
+
+mappingId	MAPID-f23dba9240674869b72dde4ea8b13ed7
+target		:county/{County_ID} a :County ; :County_ID {County_ID} ; :County_FIPS {County_FIPS} ; :Country_name {County_Name} . 
+source		SELECT County_ID, County_FIPS, County_Name from county
+
+mappingId	MAPID-d78bd2d2550d41d589859b39a4d8c76e
+target		:fatality/{FATALITY_ID} a :Fatality ; :Even_ID {EVENT_ID} ; :Fatality_ID {FATALITY_ID} ; :Fatality_Location {FATALITY_LOCATION} ; :Fatality_Age {FATALITY_AGE} ; :Fatatlity_Type {FATALITY_TYPE} ; :Fatality_Sex {FATALITY_SEX} . 
+source		SELECT FATALITY_ID,  EVENT_ID, FATALITY_LOCATION, FATALITY_AGE, FATALITY_TYPE, FATALITY_SEX FROM FATALITIES
+
+mappingId	MAPID-08b8d56e30b54c90bfe084363fb238f1
+target		:eventtime/{Begin_Date_Time} a :EventTime ; :Even_ID {EVENT_ID} ; :Begin_time {Begin_Date_Time} ; :End_Time {End_Date_Time} . 
+source		SELECT EVENT_ID, Begin_Date_Time, End_Date_Time FROM details
+
+mappingId	MAPID-e2e5734d8ba84943ae08499325dbd69f
+target		:source/{Source_ID} a :Source ; :Source_ID {Source_ID} ; :Source_Name {Source_Name} . 
+source		SELECT Source_ID, Source_Name FROM sources
+
+mappingId	MAPID-0512928ebb5c4788a66ca0ca9c2c3c5e
+target		:damagestatistics/{EVENT_ID} a :DamageStatistics ; :Even_ID {EVENT_ID} . 
+source		SELECT EVENT_ID FROM details
+
+mappingId	MAPID-3d69b0a38f8c43d3b3ade7e6951043e8
+target		:damagetopeople/{EVENT_ID} a :DamageToPeople ; :Even_ID {EVENT_ID} ; :Deaths_direct {Deaths_Direct} ; :Deaths_Indirect {Deaths_Indirect} ; :Injuries_Direct {Injuries_Direct} ; :Injuries_Indirect {Injuries_Indirect} . 
+source		SELECT EVENT_ID, Deaths_Direct, Deaths_Indirect, Injuries_Direct, Injuries_Indirect FROM details
+
+mappingId	MAPID-6ef5f6884d6448aa8db39a204d1e0b60
+target		:event/{EVENT_ID} :HasResultOfDamage :DamageStatistics/{EVENT_ID} . 
+source		SELECT EVENT_ID,  EVENT_ID from details
+]]
+

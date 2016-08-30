@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#"
+     xml:base="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedAtTime -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedAtTime">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EventTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedBecauseOf -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedBecauseOf">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedInPlace -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedInPlace">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedInRegion -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HappenedInRegion">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Has -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Has">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#County"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HasResultOfDamage -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HasResultOfDamage">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageStatistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HasVictims -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#HasVictims">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#WasHighlightedIn -->
+
+    <owl:ObjectProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#WasHighlightedIn">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Azimuth -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Azimuth">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_Date_Time -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_Date_Time">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_Lat -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_Lat">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_Lon -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_Lon">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_time -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Begin_time">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EventTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Country_name -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Country_name">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#County_FIPS -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#County_FIPS">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#County_ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#County_ID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Damage_Crops -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Damage_Crops">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Damage_Property -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Damage_Property">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Damage_Type -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Damage_Type">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Deaths_Indirect -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Deaths_Indirect">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToPeople"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Deaths_direct -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Deaths_direct">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToPeople"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Date_Time -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Date_Time">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Lat -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Lat">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Lon -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Lon">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Time -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#End_Time">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EventTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Episode_ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Episode_ID">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Episode_Narrative -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Episode_Narrative">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Even_ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Even_ID">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageStatistics"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EventTime"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event_Narrative -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event_Narrative">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event_type -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event_type">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_Age -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_Age">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_ID">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_Location -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_Location">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_Sex -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality_Sex">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatatlity_Type -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatatlity_Type">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Injuries_Direct -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Injuries_Direct">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToPeople"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Injuries_Indirect -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Injuries_Indirect">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToPeople"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Latitude -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Latitude">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location_ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location_ID">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location_Type -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location_Type">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Longitude -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Longitude">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Official_State_Code -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Official_State_Code">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Range -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Range">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source_ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source_ID">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source_Name -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source_Name">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State_FIPS -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State_FIPS">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State_ID -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State_ID">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State_name -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State_name">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Time_Zone -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Time_Zone">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Tornado_Scale -->
+
+    <owl:DatatypeProperty rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Tornado_Scale">
+        <rdfs:domain rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#BeginLocation -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#BeginLocation">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#County -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#County"/>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageStatistics -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageStatistics"/>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToEconomy -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToEconomy">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageStatistics"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToPeople -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageToPeople">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageStatistics"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EndLocation -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EndLocation">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EventTime -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EventTime"/>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source"/>
+    
+
+
+    <!-- file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State -->
+
+    <owl:Class rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#State"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#DamageStatistics"/>
+            <rdf:Description rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Event"/>
+            <rdf:Description rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#EventTime"/>
+            <rdf:Description rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Fatality"/>
+            <rdf:Description rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Location"/>
+            <rdf:Description rdf:about="file:/C:/Users/Asus/Documents/www.example.org/www.example.org/project_ca#Source"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

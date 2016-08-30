@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@color/listcolor">
+
+    <ListView android:id="@+id/list" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" ></ListView>
+
+    <TextView android:id="@android:id/empty" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/no_stations" />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/buttonGetLocation"
+        android:onClick="buttonGetLocationClick"
+        android:text="Get nearest stations" android:textSize="15px"
+        android:textStyle="bold" android:layout_marginTop="10dip" />
+
+    <EditText android:layout_height="wrap_content" android:text=""
+        android:layout_width="match_parent" android:id="@+id/editTextShowLocation"
+        android:lines="3" android:gravity="top"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShowStationList"
+        android:id="@+id/buttonShow"
+        android:onClick="buttonShowClick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CoveredDistance"
+        android:id="@+id/buttonRadius"
+        android:layout_gravity="right"
+        android:onClick="buttonRadiusClick"
+        />
+
+</LinearLayout>
